@@ -1,0 +1,49 @@
+﻿<local:BasePopUp x:Class="SACEology.StudentGradeBreakdownPopUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600">
+
+    <HeaderedContentControl Style="{StaticResource PopUpWrapper}" Header="Grade Breakdown">
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Message Title -->
+            <TextBox Grid.Row="0" Margin="10" Style ="{StaticResource MultilinePlaceholderBody}" Text="{Binding DisplayText}"/>
+            
+            <ScrollViewer Grid.Row="1">
+                <StackPanel >
+                    <Grid Grid.Row="1" Width="570">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="120"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Style="{StaticResource CoreSubheader}" Text="Standard"/>
+                        <TextBlock Grid.Column="1" Style="{StaticResource CoreSubheader}" Text="Name"/>
+                        <TextBlock Grid.Column="2" Style="{StaticResource CoreSubheader}" Text="Occurences"/>
+                        <TextBlock Grid.Column="3" Style="{StaticResource CoreSubheader}" Text="Grade"/>
+                    </Grid>
+
+                    <ItemsControl ItemsSource="{Binding Breakdowns}" BorderThickness="0" Background="{StaticResource CoreLightBrush}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <local:StudentPerformanceStandardBreakdown/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+    </HeaderedContentControl>
+</local:BasePopUp>

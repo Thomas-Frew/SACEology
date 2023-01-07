@@ -1,0 +1,110 @@
+﻿<Page x:Class="SACEology.Pages.StudentMyResultsHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From your results page, manage your grades to plan your future studies and results.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Toggle between calculating your overall performance and course-specific performance from the top combo box.
+            </TextBlock>
+
+            <StackPanel Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=SelectedOverallPerformance, Converter={local:BooleanToVisibilityConverter}}">
+                <TextBlock Style="{StaticResource BlockTitle}">
+                Overall Performance
+                </TextBlock>
+
+                <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                    <!-- Title Section -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                        <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                    </StackPanel>
+
+                    <TextBlock Style="{StaticResource TipBlockBody}">
+                    SACE's ATAR calculation system is far more complex than the one modelled in SACEology. 
+                    SACEology will never claim to predict your ATAR perfectly and is not responsible for any action taken due to such predictions.
+                    </TextBlock>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                Your courses will automatically appear as a list. The number next to them represents the percentage they are scaled up or down, based on the average scores of 2020 South Australian students.
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                Enter the final or projected grades for your courses in the text boxes next to them. These can be written as letters (A+ to E-) or 15-point values (15 to 1).
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                As is true in ATAR calculations, only your four best subjects contribute toward your ATAR.
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                The average amount your ATAR subjects are scaled is shown on the bottom.
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                Depending on the subjects you completed, you may also be granted or deducted bonus points, as shown on the bottom.
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                Using these factors, your predicted ATAR will be displayed.
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=SelectedOverallPerformance, Converter={local:ReserveBooleanToVisibilityConverter}}">
+
+                <TextBlock Style="{StaticResource BlockTitle}">
+                    Course Performance
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                    The assignments for your selected course automatically appear as a list. The number next to them represents their weighting in the course.
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                    Enter the final grades for your assignments in the text boxes next to them. These can be written as letters (A+ to E-) or 15-point values (15 to 1).
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BlockBody}">
+                    Using these grades, your final grade for the course, based on both assignment weight and equally-weighted performance standards.
+                </TextBlock>
+
+                <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                    <!-- Title Section -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                        <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                    </StackPanel>
+
+                    <TextBlock Style="{StaticResource TipBlockBody}">
+                        Want to know which performance standards you are doing well and poorly? Click the Grade Breakdown button next to the Performance Standard Grade to see how this grade is broken up.
+                    </TextBlock>
+
+                    <HeaderedContentControl Style="{StaticResource StackableTipIconTitle}" Header="&#xf140;" Content="Want to know which performance standards you are doing well and poorly? Click the Grade Breakdown button next to the Performance Standard Grade to see how this grade is broken up."/>
+
+                </StackPanel>
+
+                <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                    <!-- Title Section -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                        <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                    </StackPanel>
+
+                    <HeaderedContentControl Style="{StaticResource StackableTipIconTitle}" Header="&#xf002;" Content="If you have a specific final grade for your course in mind, enter the grades for your completed assignments, then click the Goal Seeker button. By entering your desired course grade, this tool automatically calculates the scores you will need in your future assignments to achieve this."/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

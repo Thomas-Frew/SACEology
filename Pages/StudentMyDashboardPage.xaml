@@ -1,0 +1,103 @@
+﻿<local:BasePage x:Class="SACEology.Pages.StudentMyDashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800">
+
+    <HeaderedContentControl Style="{StaticResource StudentPageWrapper}" Header="My Dashboard">
+        <Grid Name="mainframe">
+            <!-- Page Division -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Year Completion -->
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource CoreSubheader}">Your Coursework Completion</TextBlock>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource CoreTitle}" Text="{Binding CourseworkCompletion}"/>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Iconography -->
+                <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource CoreIcon}" Text="&#xf0eb;"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Style="{StaticResource CoreIcon}" Text="&#xf52d;"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource CoreIcon}" Text="&#xf24e;"/>
+                <TextBlock Grid.Row="1" Grid.Column="2" Style="{StaticResource CoreIcon}" Text="&#xf5cd;"/>
+
+                <!-- Task weight breakdown statistics -->
+                <TextBlock Grid.Row="0" Grid.Column="1" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="{Binding FormativeCourseworkCompletion}"/>
+                <TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="{Binding MinorCourseworkCompletion}"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="{Binding ModerateCourseworkCompletion}"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="{Binding MajorCourseworkCompletion}"/>
+            </Grid>
+
+
+            <!-- Sub-properties -->
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource CoreSubheader}">Your Closest Assessments</TextBlock>
+
+            <ScrollViewer Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding MostRecentAssignments}" BorderThickness="0" Background="{StaticResource CoreLightBrush}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <local:StudentAssignmentItem/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource CoreSubheader}">Most Important Performance Standards</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource CoreSubheader}">Most Important Assessment Types</TextBlock>
+
+            <ItemsControl Grid.Row="5" Grid.Column="0" ItemsSource="{Binding ImportantPerformanceStandards}" HorizontalAlignment="Center">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:AspectBadge Margin="3"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel HorizontalAlignment="Center" Width="350"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+
+            <ItemsControl Grid.Row="5" Grid.Column="1" ItemsSource="{Binding ImportantAssessmentTypes}" HorizontalAlignment="Center">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:AspectBadge Margin="3"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel HorizontalAlignment="Stretch"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePage>

@@ -1,0 +1,73 @@
+﻿<Page x:Class="SACEology.Pages.TeacherMyCommunityHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From your community page, talk to other teachers in subject-filtered chatrooms to plan your learning and share resources.
+            </TextBlock>
+        
+            <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf044;" Content="Get started with messaging your students by clicking the Create Message button."/>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}" Foreground="{StaticResource CoreLightBrush}">
+                    Want a little privacy? Leave the author section of your message blank to give it an anonymous author.
+                </TextBlock>
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Messages are ordered and coloured by their time sent; newer messages are green, older ones are red.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Press the play button on a message to hear its attached audio. Press the paperclip button on a message to download its attached files.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Be careful of viruses! Only download files from teachers you trust.
+                </TextBlock>
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                You can find resources easier by pressing the button in the bottom-left, which toggles between showing all messages and only messages with attachments.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                You can also search for a message's author, content or attachment name using the search bar in the bottom right.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    SACEology is an moderated chat room. To report any unsafe content, contact <Hyperlink NavigateUri="https://mail.google.com/mail" RequestNavigate="NavigateLink">Thomas Frew</Hyperlink>. Inappropriate behaviour can be punishable by a software ban.
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

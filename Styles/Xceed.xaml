@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+                    xmlns:local="clr-namespace:SACEology.Styles">
+    
+    <!-- Existing dictionaries -->
+    <ResourceDictionary.MergedDictionaries>
+        <!-- Order is important! -->
+        <ResourceDictionary Source="Colors.xaml"/>
+        <ResourceDictionary Source="Fonts.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type xctk:IntegerUpDown}" BasedOn="{StaticResource {x:Type xctk:IntegerUpDown}}">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="3"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    </Style>
+
+</ResourceDictionary>

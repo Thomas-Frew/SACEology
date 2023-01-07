@@ -1,0 +1,56 @@
+﻿<local:BasePopUp x:Class="SACEology.SendMessagePopUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600">
+
+    <HeaderedContentControl Style="{StaticResource PopUpWrapper}" Header="Send Message">
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+
+            <!-- Message Title -->
+            <TextBox Grid.Row="0" Height="50" Style ="{StaticResource PlaceholderInput}" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Tag="Name (Optional)"/>
+
+            <!-- Message Body -->
+            <TextBox Grid.Row="1" Margin="5 10" Style="{StaticResource MultilinePlaceholderInput}" Text="{Binding Content, UpdateSourceTrigger=PropertyChanged}" Tag="Message Content"/>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" Style="{StaticResource PlaceholderInput}" IsReadOnly="True" Focusable="False" Text="{Binding RecordingName}" Tag="Record Audio..."/>
+                <Button Grid.Column="1" Style="{StaticResource DynamicSymbolButton}" Command="{Binding MultipurposeAudioCommand}" Content="{Binding RecordingButtonState, Converter={local:RecordingButtonStateToIconConverter}}" Tag="{Binding RecordingButtonState, Converter={local:RecordingButtonStateToColourConverter}}"/>
+                <Button Grid.Column="2" Style="{StaticResource DarkSymbolButton}" Command="{Binding RemoveRecordingCommand}" Content="&#xf1f8;"/>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" Style="{StaticResource PlaceholderInput}" IsReadOnly="True" Focusable="False" Text="{Binding AttachmentName}" Tag="Attach Files..."/>
+                <Button Grid.Column="1" Style="{StaticResource DarkSymbolButton}" Command="{Binding SelectAttachmentCommand}" Content="&#xf574;"/>
+                <Button Grid.Column="2" Style="{StaticResource DarkSymbolButton}" Command="{Binding RemoveAttachmentCommand}" Content="&#xf1f8;"/>
+            </Grid>
+
+
+            <!-- Send Message Button -->
+            <Button Grid.Row="4" Style="{StaticResource CoreButton}" Command="{Binding SendMessageCommand}" Focusable="True">Send Message</Button>
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePopUp>

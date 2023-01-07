@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\PropertyChanged.Fody.2.6.1\build\PropertyChanged.Fody.props" Condition="Exists('packages\PropertyChanged.Fody.2.6.1\build\PropertyChanged.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59274974-3713-4951-AE54-51E7FD5A9A21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SACEology</RootNamespace>
+    <AssemblyName>SACEology</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SACEology_Logo_Badge.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PropertyChanged, Version=2.6.1.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>packages\PropertyChanged.Fody.2.6.1\lib\net452\PropertyChanged.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.1.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.1.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.1.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.1.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.1.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controls\Pop-Ups\ConfirmationPopUp.xaml.cs">
+      <DependentUpon>ConfirmationPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\SettingsPopUp.xaml.cs">
+      <DependentUpon>SettingsPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\HelpPopUp.xaml.cs">
+      <DependentUpon>HelpPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\SendMessagePopUp.xaml.cs">
+      <DependentUpon>SendMessagePopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\CreditsPopUp.xaml.cs">
+      <DependentUpon>CreditsPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\StudentCourseGoalSeekerPopUp.xaml.cs">
+      <DependentUpon>StudentCourseGoalSeekerPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\StudentGradeBreakdownPopUp.xaml.cs">
+      <DependentUpon>StudentGradeBreakdownPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\MessagesPopUp.xaml.cs">
+      <DependentUpon>MessagesPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HelpBadge.xaml.cs">
+      <DependentUpon>HelpBadge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PropertyBadge.xaml.cs">
+      <DependentUpon>PropertyBadge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\BasePopUp.cs" />
+    <Compile Include="Controls\Pop-Ups\ErrorPopUp.xaml.cs">
+      <DependentUpon>ErrorPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\TeacherAddAssignmentPopUp.xaml.cs">
+      <DependentUpon>TeacherAddAssignmentPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pop-Ups\TeacherAddCoursePopUp.xaml.cs">
+      <DependentUpon>TeacherAddCoursePopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AspectBadge.xaml.cs">
+      <DependentUpon>AspectBadge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentCourseInput.xaml.cs">
+      <DependentUpon>StudentCourseInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentAssignmentInputSmall.xaml.cs">
+      <DependentUpon>StudentAssignmentInputSmall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentAssignmentInput.xaml.cs">
+      <DependentUpon>StudentAssignmentInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentPerformanceStandardBreakdown.xaml.cs">
+      <DependentUpon>StudentPerformanceStandardBreakdown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentAssignmentItem.xaml.cs">
+      <DependentUpon>StudentAssignmentItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Student\StudentCourseItem.xaml.cs">
+      <DependentUpon>StudentCourseItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageItem.xaml.cs">
+      <DependentUpon>MessageItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Teacher\TeacherAssignmentItem.xaml.cs">
+      <DependentUpon>TeacherAssignmentItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Teacher\TeacherCourseItem.xaml.cs">
+      <DependentUpon>TeacherCourseItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ApplicationSetting.cs" />
+    <Compile Include="DataModel\CMProp.cs" />
+    <Compile Include="DataModel\MessageServer.cs" />
+    <Compile Include="DataModel\UserStatus.cs" />
+    <Compile Include="DataModel\ATProp.cs" />
+    <Compile Include="DataModel\PSProp.cs" />
+    <Compile Include="DataModel\GoalSeekerCalculation.cs" />
+    <Compile Include="DataModel\AMProp.cs" />
+    <Compile Include="DataModel\RecordingButtonState.cs" />
+    <Compile Include="DataModel\SProp.cs" />
+    <Compile Include="DataModel\AProp.cs" />
+    <Compile Include="DataModel\CProp.cs" />
+    <Compile Include="DataModel\ApplicationPage.cs" />
+    <Compile Include="Helpers\PropertyHelpers.cs" />
+    <Compile Include="Helpers\ValidationHelpers.cs" />
+    <Compile Include="Helpers\DatabaseHelpers.cs" />
+    <Compile Include="Helpers\NavigationHelpers.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\Help\StudentMyResultsHelp.xaml.cs">
+      <DependentUpon>StudentMyResultsHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\TeacherAssignmentHelp.xaml.cs">
+      <DependentUpon>TeacherAssignmentHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\StudentAssignmentHelp.xaml.cs">
+      <DependentUpon>StudentAssignmentHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\TeacherCourseHelp.xaml.cs">
+      <DependentUpon>TeacherCourseHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\TeacherMyCommunityHelp.xaml.cs">
+      <DependentUpon>TeacherMyCommunityHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\TeacherPortalHelp.xaml.cs">
+      <DependentUpon>TeacherPortalHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\TeacherMyCoursesHelp.xaml.cs">
+      <DependentUpon>TeacherMyCoursesHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\StudentMyDashboardHelp.xaml.cs">
+      <DependentUpon>StudentMyDashboardHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\StudentCourseHelp.xaml.cs">
+      <DependentUpon>StudentCourseHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\StudentMyCoursesHelp.xaml.cs">
+      <DependentUpon>StudentMyCoursesHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\StudentPortalHelp.xaml.cs">
+      <DependentUpon>StudentPortalHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentMyResultsPage.xaml.cs">
+      <DependentUpon>StudentMyResultsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentPortalPage.xaml.cs">
+      <DependentUpon>StudentPortalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentAssignmentPage.xaml.cs">
+      <DependentUpon>StudentAssignmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentMyDashboardPage.xaml.cs">
+      <DependentUpon>StudentMyDashboardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TeacherAssignmentPage.xaml.cs">
+      <DependentUpon>TeacherAssignmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentCoursePage.xaml.cs">
+      <DependentUpon>StudentCoursePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TeacherMyCommunityPage.xaml.cs">
+      <DependentUpon>TeacherMyCommunityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TeacherCoursePage.xaml.cs">
+      <DependentUpon>TeacherCoursePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentMyCoursesPage.xaml.cs">
+      <DependentUpon>StudentMyCoursesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TeacherMyCoursesPage.xaml.cs">
+      <DependentUpon>TeacherMyCoursesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TeacherPortalPage.xaml.cs">
+      <DependentUpon>TeacherPortalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMenuPage.xaml.cs">
+      <DependentUpon>MainMenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="ValueConverters\BaseValueConverter.cs" />
+    <Compile Include="ValueConverters\BooleanToSettingButtonBackgroundConverter.cs" />
+    <Compile Include="ValueConverters\ReverseBooleanToVisibilityConverter.cs" />
+    <Compile Include="ValueConverters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="ValueConverters\GoalSeekerCalculationNameValueConverter.cs" />
+    <Compile Include="ValueConverters\HelpPageValueConverter.cs" />
+    <Compile Include="ValueConverters\PageValueConverter.cs" />
+    <Compile Include="ValueConverters\MessageUrgencyToBrushConverter.cs" />
+    <Compile Include="ValueConverters\MessageLengthToFontSizeConverter.cs" />
+    <Compile Include="ValueConverters\AttachmentButtonStateToIconConverter.cs" />
+    <Compile Include="ValueConverters\RecordingButtonStateToColourConverter.cs" />
+    <Compile Include="ValueConverters\RootCodeToTitleConverter.cs" />
+    <Compile Include="ValueConverters\RootCodeToDescriptionConverter.cs" />
+    <Compile Include="ValueConverters\TitleLengthToFontSizeConverter.cs" />
+    <Compile Include="ValueConverters\RecordingButtonStateToIconConverter.cs" />
+    <Compile Include="ValueConverters\MessagesToDisplayMessageConverter.cs" />
+    <Compile Include="ValueConverters\PercentageToDisplayPercentageConverter.cs" />
+    <Compile Include="ValueConverters\WindowHeightToPopUpHeightConverter.cs" />
+    <Compile Include="ValueConverters\WeightToDisplayWeightConverter.cs" />
+    <Compile Include="ValueConverters\SubjectCodetoBrushConverter.cs" />
+    <Compile Include="ValueConverters\StringRGBtoBrushConverter.cs" />
+    <Compile Include="ValueConverters\StringRGBtoColorConverter.cs" />
+    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Base\RelayCommand.cs" />
+    <Compile Include="ViewModel\Base\RelayParameterizedCommand.cs" />
+    <Compile Include="ViewModel\Controls\HelpBadgeViewModel.cs" />
+    <Compile Include="ViewModel\Controls\PropertyBadgeViewModel.cs" />
+    <Compile Include="ViewModel\Controls\AspectBadgeViewModel.cs" />
+    <Compile Include="ViewModel\Controls\StudentCourseInputViewModel.cs" />
+    <Compile Include="ViewModel\Controls\StudentPerformanceStandardBreakdownViewModel.cs" />
+    <Compile Include="ViewModel\Controls\StudentAssignmentInputViewModel.cs" />
+    <Compile Include="ViewModel\Controls\StudentAssignmentItemViewModel.cs" />
+    <Compile Include="ViewModel\Controls\TeacherAssignmentItemViewModel.cs" />
+    <Compile Include="ViewModel\Controls\StudentCourseItemViewModel.cs" />
+    <Compile Include="ViewModel\Controls\TeacherCourseItemViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\CreditsPopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\StudentCourseGoalSeekerPopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\StudentGradeBreakdownPopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\HelpPopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\SettingsPopUpViewModel.cs" />
+    <Compile Include="ViewModel\StudentMyResultsPageViewModel.cs" />
+    <Compile Include="ViewModel\StudentMyDashboardPageViewModel.cs" />
+    <Compile Include="ViewModel\PortalPageViewModel.cs" />
+    <Compile Include="ViewModel\MainMenuPageViewModel.cs" />
+    <Compile Include="ViewModel\Controls\MessageItemViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\SendMessagePopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\MessagesPopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\TeacherAddAssignmentPopUpViewModel.cs" />
+    <Compile Include="ViewModel\Pop-Ups\TeacherAddCoursePopUpViewModel.cs" />
+    <Compile Include="ViewModel\StudentAssignmentPageViewModel.cs" />
+    <Compile Include="ViewModel\TeacherAssignmentPageViewModel.cs" />
+    <Compile Include="ViewModel\StudentCoursePageViewModel.cs" />
+    <Compile Include="ViewModel\TeacherCoursePageViewModel.cs" />
+    <Compile Include="ViewModel\StudentMyCoursesPageViewModel.cs" />
+    <Compile Include="ViewModel\TeacherMyCommunityPageViewModel.cs" />
+    <Compile Include="ViewModel\TeacherMyCoursesPageViewModel.cs" />
+    <Compile Include="ViewModel\WindowViewModel.cs" />
+    <Page Include="Controls\Pop-Ups\ConfirmationPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\SettingsPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\HelpPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\SendMessagePopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\CreditsPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\StudentCourseGoalSeekerPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\StudentGradeBreakdownPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\MessagesPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\HelpBadge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PropertyBadge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\ErrorPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\TeacherAddAssignmentPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Pop-Ups\TeacherAddCoursePopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\AspectBadge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Student\StudentCourseInput.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Student\StudentAssignmentInputSmall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Student\StudentAssignmentInput.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Student\StudentPerformanceStandardBreakdown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Student\StudentAssignmentItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Student\StudentCourseItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\MessageItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Teacher\TeacherAssignmentItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Teacher\TeacherCourseItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Animations\PageAnimations.cs" />
+    <Compile Include="Animations\StoryboardAnimation.cs" />
+    <Compile Include="Animations\StoryboardHelpers.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\Help\StudentMyResultsHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\TeacherAssignmentHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\StudentAssignmentHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\TeacherCourseHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\TeacherMyCommunityHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\TeacherPortalHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\TeacherMyCoursesHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\StudentMyDashboardHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\StudentCourseHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\StudentMyCoursesHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Help\StudentPortalHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StudentMyResultsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StudentPortalPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StudentAssignmentPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StudentMyDashboardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\TeacherAssignmentPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StudentCoursePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\TeacherMyCommunityPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\TeacherCoursePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\StudentMyCoursesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\TeacherMyCoursesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\TeacherPortalPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\MainMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Texts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Xceed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ComboBoxes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Headers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Fonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Scroll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\TrakyaSans.ttf" />
+    <Resource Include="Resources\TrakyaSansMedium.ttf" />
+    <Resource Include="Resources\Trakya.otf" />
+    <Resource Include="Resources\Roboto-BlackItalic.ttf" />
+    <Resource Include="Resources\Roboto-Bold.ttf" />
+    <Resource Include="Resources\Roboto-BoldItalic.ttf" />
+    <Resource Include="Resources\Roboto-Italic.ttf" />
+    <Resource Include="Resources\Roboto-LightItalic.ttf" />
+    <Resource Include="Resources\RobotoMedium.ttf" />
+    <Resource Include="Resources\Roboto-MediumItalic.ttf" />
+    <Resource Include="Resources\Roboto-ThinItalic.ttf" />
+    <Resource Include="Resources\RobotoBlack.ttf" />
+    <Resource Include="Resources\RobotoLight.ttf" />
+    <Resource Include="Resources\RobotoRegular.ttf" />
+    <Resource Include="Resources\RobotoThin.ttf" />
+    <Resource Include="Resources\FontAwesomeFree.otf" />
+    <Resource Include="Resources\FontAwesomeFreeLight.otf" />
+    <Resource Include="Resources\Password.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SACEology_Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SACEology_Logo.ico" />
+    <Resource Include="Resources\SACEology_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SACEology_Logo_Badge.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SACEology_Logo_Badge.ico" />
+    <Resource Include="Resources\SACEology_Logo_Badge.png" />
+    <Resource Include="Resources\SACEology_Logo_Light.ico" />
+    <Resource Include="Resources\SACEology_Logo_Light.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Fody.4.2.1\build\Fody.targets" Condition="Exists('packages\Fody.4.2.1\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Fody.4.2.1\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Fody.4.2.1\build\Fody.targets'))" />
+    <Error Condition="!Exists('packages\PropertyChanged.Fody.2.6.1\build\PropertyChanged.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\PropertyChanged.Fody.2.6.1\build\PropertyChanged.Fody.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

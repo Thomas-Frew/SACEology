@@ -1,0 +1,10 @@
+ABC,Test 1,,COURSE,COURSE,COURSE,COURSE,COURSE,COURSE
+ABC,Test 1,,S Test 1,28-May,1,Test Description 1,LN1,"KA1 KA2"
+ABC,Test 2,,S Test 2,29-May,10,Test Description 2,LN2,"KA1 KA3"
+ABC,Test 2,,S Test 3,30-May,10,Test Description 3,LN3,"KA1 KA4"
+ABC,Test 2,,S Test 4,31-May,10,Test Description 10,LN4,"KA1 KA5"
+PHY,Test 3,,S Test 5,1-Jun,5,Test Description 5,LN5,"KA1 KA6"
+PHY,Test 4,,S Test 6,2-Jun,6,Test Description 6,LN6,"KA1 KA7"
+IHU,Test 5,,S Test 7,3-Jun,7,Test Description 7,LN7,"KA1 KA8"
+MHS,Test 6,,S Test 8,4-Jun,8,Test Description 8,LN8,"KA1 KA9"
+CHM,Test 7,,S Test 9,5-Jun,9,Test Description 9,LN9,"KA1 KA10"

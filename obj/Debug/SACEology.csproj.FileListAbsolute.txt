@@ -1,0 +1,219 @@
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\bin\Debug\SACEology.exe.config
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\bin\Debug\SACEology.exe
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\bin\Debug\SACEology.pdb
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.csprojAssemblyReference.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Headers.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Fonts.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Controls\Pop-Up\TeacherAddCoursePopUp.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\MainWindow.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherPortalPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\MainMenuPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\App.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology_MarkupCompile.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology_MarkupCompile.lref
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\App.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\MainWindow.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherPortalPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\MainMenuPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Buttons.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Colors.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Scroll.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Texts.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Controls\Pop-Up\TeacherAddCoursePopUp.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.g.resources
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.Properties.Resources.resources
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.csproj.GenerateResource.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.csproj.CoreCompileInputs.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.csproj.Fody.CopyLocal.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.exe
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.pdb
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\ComboBoxes.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\bin\Debug\SACEology.exe.config
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\bin\Debug\SACEology.exe
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\bin\Debug\SACEology.pdb
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csprojAssemblyReference.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\Headers.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\Fonts.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\TeacherAddCoursePopUp.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\MainWindow.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherPortalPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Pages\MainMenuPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\App.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology_MarkupCompile.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology_MarkupCompile.lref
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\App.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\TeacherAddCoursePopUp.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\MainWindow.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherPortalPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Pages\MainMenuPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\Buttons.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\Colors.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\ComboBoxes.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\Scroll.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Styles\Texts.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.g.resources
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.Properties.Resources.resources
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csproj.GenerateResource.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csproj.CoreCompileInputs.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csproj.Fody.CopyLocal.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.exe
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\SACEology.pdb
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Controls\AspectBadge.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\Task 5 - SACEology\SACEology\obj\Debug\Controls\AspectBadge.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\SACEology.exe.config
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\SACEology.exe
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\SACEology.pdb
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Newtonsoft.Json.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\Newtonsoft.Json.xml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Fonts.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\ConfirmationPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\SettingsPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\HelpPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\SendMessagePopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\CreditsPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\StudentCourseGoalSeekerPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\StudentGradeBreakdownPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\MessagesPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\HelpBadge.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\PropertyBadge.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\ErrorPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\TeacherAddAssignmentPopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\TeacherAddCoursePopUp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\AspectBadge.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentCourseInput.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentAssignmentInputSmall.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentAssignmentInput.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentPerformanceStandardBreakdown.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentAssignmentItem.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentCourseItem.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\MessageItem.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Teacher\TeacherAssignmentItem.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\MainWindow.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentMyResultsHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherAssignmentHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentAssignmentHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherCourseHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherMyCommunityHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherPortalHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherMyCoursesHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentMyDashboardHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentCourseHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentMyCoursesHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentPortalHelp.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentMyResultsPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentPortalPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentAssignmentPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentMyDashboardPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherAssignmentPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentCoursePage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherMyCommunityPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherCoursePage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentMyCoursesPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherPortalPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\MainMenuPage.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\App.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology_MarkupCompile.cache
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology_MarkupCompile.lref
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\App.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\ConfirmationPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\SettingsPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\HelpPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\SendMessagePopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\CreditsPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\StudentCourseGoalSeekerPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\StudentGradeBreakdownPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\MessagesPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\HelpBadge.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\PropertyBadge.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\ErrorPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\TeacherAddAssignmentPopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Pop-Ups\TeacherAddCoursePopUp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\AspectBadge.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentCourseInput.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentAssignmentInputSmall.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentAssignmentInput.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentPerformanceStandardBreakdown.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentAssignmentItem.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Student\StudentCourseItem.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\MessageItem.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Teacher\TeacherAssignmentItem.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\MainWindow.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentMyResultsHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherAssignmentHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentAssignmentHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherCourseHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherMyCommunityHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherPortalHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\TeacherMyCoursesHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentMyDashboardHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentCourseHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentMyCoursesHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\Help\StudentPortalHelp.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentMyResultsPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentPortalPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentAssignmentPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentMyDashboardPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherAssignmentPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentCoursePage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherMyCommunityPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherCoursePage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\StudentMyCoursesPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\TeacherPortalPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Pages\MainMenuPage.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Texts.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Xceed.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Buttons.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Colors.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\ComboBoxes.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Headers.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\Styles\Scroll.baml
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.g.resources
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.Properties.Resources.resources
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csproj.GenerateResource.Cache
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csproj.Fody.CopyLocal.cache
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.exe
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.pdb
+C:\Users\THOMASF001\Documents\Year 12 Work\Digital Technologies (Goldfinch)\Task 5 - SACEology\SACEology\obj\Debug\SACEology.csprojResolveAssemblyReference.cache

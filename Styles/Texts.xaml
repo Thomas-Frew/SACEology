@@ -1,0 +1,466 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:SACEology.Styles">
+
+    <!-- Core Texts -->
+    <Style x:Key="CoreTitle" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoBlack}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeHuge}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CoreStatistic" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CoreHeader" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CoreSubheader" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CoreBody" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <Style x:Key="CoreCaption" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeSmall}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <Style x:Key="CoreIcon" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CoreTooltipHeader" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeSmall}"/>
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CoreTooltipBody" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeSmall}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <!-- Custom Texts -->
+
+    <Style x:Key="MessageHeader" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreLightBrush}"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="MessageTime" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeTiny}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreLightBrush}"/>
+        <Setter Property="Margin" Value="5 0"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <Style x:Key="HeaderIcon" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreLightBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="PropertyIcon" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreLightBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="HelpIcon" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="BlockSymbol" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="BlockBody" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Margin" Value="5 10"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+        <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+    </Style>
+
+    <Style x:Key="TipBlockBody" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreLightBrush}"/>
+        <Setter Property="Margin" Value="5 10"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+        <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+    </Style>
+
+
+    <Style x:Key="BlockTitle" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="Margin" Value="5 10"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+        <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+    </Style>
+
+    <Style x:Key="InlineBody" TargetType="{x:Type Run}">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+    </Style>
+
+    <Style x:Key="InlineSymbol" TargetType="{x:Type Run}">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+    </Style>
+
+    <Style TargetType="{x:Type Hyperlink}">
+        <Setter Property="Foreground" Value="{StaticResource TeacherBlueBrush}"/>
+        <Setter Property="TextBlock.TextDecorations" Value="Underline" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource CoreMediumBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="MultilinePlaceholderBody" TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" >
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="SpellCheck.IsEnabled" Value="True"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="Focusable" Value="False"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Grid>
+                        <Border x:Name="border" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                        <TextBlock IsHitTestVisible="False"
+                                   Text="{TemplateBinding Tag}"
+                                   x:Name="placeholder"
+                                   Padding="{TemplateBinding Padding}"
+                                   VerticalAlignment="Top"
+                                   TextWrapping="Wrap"
+                                   Opacity="0.7"
+                                   Margin="2"
+                                   HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                   Foreground="{StaticResource CoreDarkBrush}">
+
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="GotFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="LostFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0.7" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Text Boxes -->
+    <Style x:Key="PlaceholderInput" TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" >
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="3"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Grid>
+                        <Border x:Name="border" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                        <TextBlock IsHitTestVisible="False"
+                                   Text="{TemplateBinding Tag}"
+                                   x:Name="placeholder"
+                                   Padding="{TemplateBinding Padding}"
+                                   VerticalAlignment="Center"
+                                   Opacity="0.7"
+                                   Margin="2"
+                                   HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                   Foreground="{StaticResource CoreDarkBrush}">
+
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="GotFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="LostFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0.7" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="PlaceholderInputHeader" TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" >
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMedium}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreLightBrush}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="3"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Grid>
+                        <Border x:Name="border" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                        <TextBlock IsHitTestVisible="False"
+                                   Text="{TemplateBinding Tag}"
+                                   x:Name="placeholder"
+                                   Padding="{TemplateBinding Padding}"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   Opacity="0.7"
+                                   Margin="2"
+                                   Foreground="{StaticResource CoreLightBrush}">
+
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="GotFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="LostFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0.7" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="MultilinePlaceholderInput" TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" >
+        <Setter Property="FontSize" Value="{StaticResource FontSizeFair}"/>
+        <Setter Property="Foreground" Value="{StaticResource CoreDarkBrush}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="SpellCheck.IsEnabled" Value="True"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Grid>
+                        <Border x:Name="border" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+
+                        <TextBlock IsHitTestVisible="False"
+                                   Text="{TemplateBinding Tag}"
+                                   x:Name="placeholder"
+                                   Padding="{TemplateBinding Padding}"
+                                   VerticalAlignment="Top"
+                                   TextWrapping="Wrap"
+                                   Opacity="0.7"
+                                   Margin="2"
+                                   HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                   Foreground="{StaticResource CoreDarkBrush}">
+
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"></Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="GotFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="LostFocus">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation To="0.7" Duration="0:0:0.2" Storyboard.TargetName="placeholder" Storyboard.TargetProperty="Opacity" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

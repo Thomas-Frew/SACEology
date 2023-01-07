@@ -1,0 +1,41 @@
+﻿<local:BasePage x:Class="SACEology.Pages.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid Name="mainframe">
+        <!-- Page Division -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Menu Title -->
+        <TextBlock Grid.ColumnSpan="3" Style="{StaticResource CoreTitle}" Text="SACEology"/>
+        <TextBlock Grid.Row="1" Style="{StaticResource CoreBody}" Text="To succeed in your studies, you'll have to study twice." Grid.ColumnSpan="3"/>
+        
+        <!-- Menu Buttons -->
+        <Button Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource OrangeButton}" Command="{Binding StudentPortalButtonCommand}" CommandParameter="1">Student Portal</Button>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource BlueButton}" Command="{Binding TeacherPortalButtonCommand}" CommandParameter="7">Teacher Portal</Button>
+        <Button Grid.Row="4" Grid.Column="0" Style="{StaticResource GreenButton}" Command="{Binding CreditsButtonCommand}">Credits</Button>
+        <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource GreenButton}" Command="{Binding SettingsButtonCommand}">Settings</Button>
+
+        <!-- Disclaimer -->
+        <TextBlock Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource CoreCaption}" VerticalAlignment="Bottom">
+            Disclaimer: SACEology is not affliliated with the SACE Board of South Australia<Run FontSize="8pt" BaselineAlignment="TextTop">©</Run> and is an official third party.
+        </TextBlock>
+    </Grid>
+</local:BasePage>

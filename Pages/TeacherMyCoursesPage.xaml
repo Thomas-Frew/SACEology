@@ -1,0 +1,72 @@
+﻿<local:BasePage x:Class="SACEology.Pages.TeacherMyCoursesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+
+    <HeaderedContentControl Style="{StaticResource TeacherPageWrapper}" Header="My Courses">
+        <Grid Name="mainframe" Background="{StaticResource CoreLightBrush}">
+            <!-- Page Division -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+
+            <!-- Page Header and content buttons -->
+            <TextBlock Style="{StaticResource CoreBody}" Text="Create and manage your courses here."/>
+            <Button Style="{StaticResource DarkSymbolButton}" Width="50" HorizontalAlignment="Right" Command="{Binding AddCourseButtonCommand}">&#xf055;</Button>
+
+            <!-- The ScrollViewer to navigate along the list of teacher courses -->
+            <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <!-- The borderless, core-white ItemsControl which stores the list of teacher courses -->
+                <ItemsControl ItemsSource="{Binding Courses}" BorderThickness="0" Background="{StaticResource CoreLightBrush}">
+                    <!-- The template for items within the ItemsControl... -->
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <!-- ...is the TeacherCourse Item, as coded in Controls -->
+                            <local:TeacherCourseItem/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <!-- MyCourses properties -->
+            <Grid Grid.Row="2">
+                <!-- The footer is a 3 x 2 grid -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Total number of courses -->
+                <Grid Grid.Column="0">
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource CoreStatistic}" Text="{Binding CourseCount}"/>
+                        <TextBlock Style="{StaticResource CoreBody}" Text="Courses"/>
+                    </StackPanel>
+                </Grid>
+                
+                <!-- Total number of incomplete courses -->
+                <Grid Grid.Column="1">
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource CoreStatistic}" Text="{Binding IncompleteCourseCount}"/>
+                        <TextBlock Style="{StaticResource CoreBody}" Text="Incomplete Courses"/>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Total number of new courses -->
+                <Grid Grid.Column="2">
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource CoreStatistic}" Text="{Binding NewMessageCount}"/>
+                        <TextBlock Style="{StaticResource CoreBody}" Text="New Messages"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePage>

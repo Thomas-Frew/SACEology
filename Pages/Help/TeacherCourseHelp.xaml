@@ -1,0 +1,79 @@
+﻿<Page x:Class="SACEology.Pages.TeacherCourseHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From this specific course page, you can create and manage all the assignments within <Run Style="{StaticResource InlineBody}" Text="{Binding Source={x:Static properties:Settings.Default}, Path=SelectedCourse}"/>, ensuring it is a complete course.
+            </TextBlock>
+
+            <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf055;" Content="Click the Add Button to create a new assignment for this course."/>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Click on an assignment to view more information about it.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The number next to an assignment indicates its number of new messages.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The date next to an assignment indicates when it is due.
+            </TextBlock>
+
+            <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf1f8;" Content="Click the Bin Button next to an assignment to delete it."/>
+
+            <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Deleted assignments are gone for good. Be careful!
+                </TextBlock>
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                To create a SACE-approved course, it must include assignments with at least one of each of the subject's performance standards and assessment types.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                As you add assignments to the course, its missing performance standards and assessment types displayed at the bottom will disappear until the course is complete.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Hover over a missing performance standard or assessment type to learn more about it. It could help in guiding the creation of your assignments!
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Although this page should help create SACE-approved courses, anything that deviates too far from their learning plans should always be approved by an appropriate supervisor.
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

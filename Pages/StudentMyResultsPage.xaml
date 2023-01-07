@@ -1,0 +1,193 @@
+﻿<local:BasePage x:Class="SACEology.Pages.StudentMyResultsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800">
+
+    <HeaderedContentControl Style="{StaticResource StudentPageWrapper}" Header="My Results">
+        <Grid Name="mainframe" Background="{StaticResource CoreLightBrush}">
+            <!-- Page Division -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Year Completion -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Style="{StaticResource CoreSubheader}" Text="Calculate:"/>
+                <ComboBox Grid.Column="1" ItemContainerStyle="{StaticResource StudentComboBoxItem}" ItemsSource="{Binding CalculationTypes}" SelectedItem="{Binding SelectedCalculationType}"/>
+            </Grid>
+
+            <!-- Course Performance Calculator -->
+            <Grid Grid.Row="1" Visibility="{Binding IsCoursePerformance, Converter={local:BooleanToVisibilityConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+
+                <!-- Course Selection -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="60"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Style="{StaticResource CoreSubheader}" Text="For Course:"/>
+                    <ComboBox Grid.Column="1" ItemContainerStyle="{StaticResource StudentComboBoxItem}" ItemsSource="{Binding CourseNames}" SelectedItem="{Binding SelectedCourse}"/>
+                    <Button Grid.Column="2" Style="{StaticResource DarkSymbolButton}" Command="{Binding ViewCourseGoalSeekerButtonCommand}" Focusable="True">&#xf140;</Button>
+                </Grid>
+                
+                <!-- Assignments View and Grade Input -->
+                <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="120"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Style="{StaticResource CoreSubheader}" Text="Assignment"/>
+                            <TextBlock Grid.Column="1" Style="{StaticResource CoreSubheader}" Text="Weighting"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource CoreSubheader}" Text="Grade"/>
+                        </Grid>
+
+                        <ItemsControl Grid.Row="1" ItemsSource="{Binding Assignments}" BorderThickness="0" Background="{StaticResource CoreLightBrush}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <local:StudentAssignmentInput/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                </ScrollViewer>
+
+                <!-- Property Titles -->
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Style="{StaticResource CoreSubheader}" Text="Pure Weight Grade"/>
+
+                    <Grid Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource CoreSubheader}" Text="Performance Standard Grade"/>
+                        <Button Grid.Column="1" Style="{StaticResource DarkSymbolButton}" Command="{Binding ViewGradeBreakdownButtonCommand}" Visibility="{Binding IsGradeBreakdownEnabled, Converter={local:BooleanToVisibilityConverter}}" Focusable="True">&#xf002;</Button>
+                    </Grid>
+                </Grid>
+
+                <!-- Results Properties -->
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Style="{StaticResource CoreStatistic}" VerticalAlignment="Center" Text="{Binding PureWeightGrade}"/>
+                    <TextBlock Grid.Column="1" Style="{StaticResource CoreStatistic}" VerticalAlignment="Center" Text="{Binding PerformanceStandardGrade}"/>
+                </Grid>
+
+            </Grid>
+            
+            <!-- Overall Performance Calculator -->
+            <Grid Grid.Row="1" Visibility="{Binding IsOverallPerformance, Converter={local:BooleanToVisibilityConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+
+                <!-- Courses View and Grade Input -->
+                <ScrollViewer Grid.Row="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="120"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Style="{StaticResource CoreSubheader}" Text="Course"/>
+                            <TextBlock Grid.Column="1" Style="{StaticResource CoreSubheader}" Text="Scaling"/>
+                            <TextBlock Grid.Column="2" Style="{StaticResource CoreSubheader}" Text="Grade"/>
+                        </Grid>
+
+                        <ItemsControl Grid.Row="1" ItemsSource="{Binding Courses}" BorderThickness="0" Background="{StaticResource CoreLightBrush}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <local:StudentCourseInput/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+
+                </ScrollViewer>
+
+                <!-- Property Titles -->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Style="{StaticResource CoreSubheader}" Text="Predicted Scaling"/>
+
+                    <TextBlock Grid.Column="1" Style="{StaticResource CoreSubheader}" Text="Bonus Points"/>
+
+                    <Grid Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource CoreSubheader}" Text="Predicted ATAR"/>
+                        <Button Grid.Column="1" Style="{StaticResource DarkSymbolButton}" Command="{Binding ViewGradeBreakdownButtonCommand}" Visibility="{Binding IsGradeBreakdownEnabled, Converter={local:BooleanToVisibilityConverter}}" Focusable="True">&#xf059;</Button>
+                    </Grid>
+                </Grid>
+
+                <!-- Results Properties -->
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Style="{StaticResource CoreStatistic}" VerticalAlignment="Center" Text="{Binding PredictedScaling}"/>
+                    <TextBlock Grid.Column="1" Style="{StaticResource CoreStatistic}" VerticalAlignment="Center" Text="{Binding BonusPoints}"/>
+                    <TextBlock Grid.Column="2" Style="{StaticResource CoreStatistic}" VerticalAlignment="Center" Text="{Binding PredictedATAR}"/>
+                </Grid>
+
+            </Grid>
+            
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePage>

@@ -1,0 +1,56 @@
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\bin\Debug\Frew Application Core.exe.config
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\bin\Debug\Frew Application Core.exe
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\bin\Debug\Frew Application Core.pdb
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core.csprojResolveAssemblyReference.cache
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\MainWindow.g.cs
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\App.g.cs
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core_MarkupCompile.cache
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core_MarkupCompile.lref
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\MainWindow.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Styles\Colors.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Styles\Fonts.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Styles\Scroll.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core.g.resources
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew_Application_Core.Properties.Resources.resources
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core.csproj.GenerateResource.Cache
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core.exe
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core.pdb
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\App.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Styles\Buttons.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Styles\Texts.baml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\bin\Debug\PropertyChanged.dll
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\bin\Debug\PropertyChanged.xml
+C:\Users\THOMASF001\Desktop\Frewfiles 5.0 - The Ultimate Ultimatum\Frew's Coding Portal\C#\Frew Application Core\obj\Debug\Frew Application Core.csproj.Fody.CopyLocal.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Frew Application Core.csprojAssemblyReference.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\MainWindow.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\App.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\App.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\MainWindow.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Buttons.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Colors.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Fonts.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Scroll.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Texts.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Frew Application Core.csproj.GenerateResource.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Frew Application Core.csproj.CoreCompileInputs.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Frew Application Core.csproj.Fody.CopyLocal.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\MainMenuPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\MainMenuPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherPortalPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherPortalPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Pages\TeacherMyCoursesPage.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Styles\Headers.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.baml
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\Controls\Teacher\TeacherCourseItem.g.cs
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology_MarkupCompile.cache
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology_MarkupCompile.lref
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\bin\Debug\SACEology.exe.config
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\bin\Debug\SACEology.exe
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\bin\Debug\SACEology.pdb
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.g.resources
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.Properties.Resources.resources
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.exe
+C:\Users\VSS Test\OneDrive - Nazareth Catholic Community\Documents\SACEology\obj\Debug\SACEology.pdb

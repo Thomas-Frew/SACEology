@@ -1,0 +1,19 @@
+﻿<Window x:Class="SACEology.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SACEology"
+        mc:Ignorable="d"
+        Title="SACEology" 
+        Icon="Resources/SACEology_Logo_Badge.ico"
+        Width="800" Height="{Binding WindowHeight, Mode=TwoWay}" 
+        MinWidth="{Binding WindowMinimumWidth}" MinHeight="{Binding WindowMinimumHeight}">
+
+    <!-- The Main Window's XAML -->
+    <Grid Name="mainframe" Background="{StaticResource CoreLightBrush}">
+
+        <!-- The application's main frame, with flexible page display -->
+        <Frame Grid.Row="1" Margin="5" NavigationUIVisibility="Hidden" Navigated="RemoveFrameHistory" Content="{Binding CurrentPage, Converter={local:PageValueConverter}}"/>
+    </Grid>
+</Window>

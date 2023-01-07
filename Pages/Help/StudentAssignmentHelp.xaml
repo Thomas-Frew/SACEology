@@ -1,0 +1,53 @@
+﻿<Page x:Class="SACEology.Pages.StudentAssignmentHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From this specific assignment page, view assessment dates and advice while communicating with your teacher for <Run Style="{StaticResource InlineBody}" Text="{Binding Source={x:Static properties:Settings.Default}, Path=SelectedAssignment}"/>.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Read the assignment's description, starting date, due date, and weight: which can be changed by your teacher at any time.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The assignment's performance standards are displayed below; hover over one to read how to achieve it.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Click the button on the bottom to open the chatroom specific to this assignment, where you can answer your student's questions and give announcements using text, audio, or attachments.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <HeaderedContentControl Style="{StaticResource StackableTipIconTitle}" Header="&#xf1d8;" Content="Once you open the chat room, get started with messaging your teacher by clicking the Create Message button."/>
+            </StackPanel>
+
+            <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    All attachments download to your Documents folder. Contact your teacher for advice on where this is.
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

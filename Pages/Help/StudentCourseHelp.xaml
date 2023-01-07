@@ -1,0 +1,56 @@
+﻿<Page x:Class="SACEology.Pages.StudentCourseHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From this specific course page, you can view all the assignments within <Run Style="{StaticResource InlineBody}" Text="{Binding Source={x:Static properties:Settings.Default}, Path=SelectedCourse}"/> and their properties at a glance.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Click on an assignment to view more information about it.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Assignments with exceptional properties are labelled with icons to help prioritise your studies.
+                </TextBlock>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <HeaderedContentControl Grid.Row="0" Style="{StaticResource StackableTipIconTitle}" Header="&#xf017;" Content="Most urgent assignment."/>
+                    <HeaderedContentControl Grid.Row="1" Style="{StaticResource StackableTipIconTitle}" Header="&#xf002;" Content="Assignment with the least performance standards (technical)."/>
+                    <HeaderedContentControl Grid.Row="2" Style="{StaticResource StackableTipIconTitle}" Header="&#xf61f;" Content="Assignment with the most performance standards (broad)."/>
+                    <HeaderedContentControl Grid.Row="3" Style="{StaticResource StackableTipIconTitle}" Header="&#xf5cd;" Content="Assignment worth most within the course."/>
+                    <HeaderedContentControl Grid.Row="4" Style="{StaticResource StackableTipIconTitle}" Header="&#xf252;" Content="Assignment with the least time to complete."/>
+                </Grid>
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The date next to an assignment indicates when it is due.
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

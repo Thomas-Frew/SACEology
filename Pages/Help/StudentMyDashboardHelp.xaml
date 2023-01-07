@@ -1,0 +1,65 @@
+﻿<Page x:Class="SACEology.Pages.StudentMyDashboardHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From your dashboard, view your overall coursework completion, upcoming assignments, and most important skills, all in one location.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Learn how many of your assignments have concluded, and hence your overall coursework completion, with the large number. 
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Coursework completion is also broken down into assignment weight, so you can tell if you have completed more major or minor assignments.
+            </TextBlock>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <HeaderedContentControl Grid.Row="0" Style="{StaticResource StackableIconTitle}" Header="&#xf0eb;" Content="Formative: 0%"/>
+                <HeaderedContentControl Grid.Row="1" Style="{StaticResource StackableIconTitle}" Header="&#xf52d;" Content="Minor: 0% - 10%"/>
+                <HeaderedContentControl Grid.Row="2" Style="{StaticResource StackableIconTitle}" Header="&#xf24e;" Content="Moderate: 10% - 25%"/>
+                <HeaderedContentControl Grid.Row="3" Style="{StaticResource StackableIconTitle}" Header="&#xf5cd;" Content="Major: >25%"/>
+            </Grid>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Your five most urgent assignments are shown. Click on one to view more information about it.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Your four most crucial performance standards and assessment types are also shown, based on how frequently they occur in your remaining coursework.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">   
+                To optimize your success, you should focus on developing these aspects more than anything else.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    The performance standards and assessment types are ordered from left to right based on importance. The leftmost one should be your number one priority!
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

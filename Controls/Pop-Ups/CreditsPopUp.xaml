@@ -1,0 +1,49 @@
+﻿<local:BasePopUp x:Class="SACEology.CreditsPopUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600">
+
+    <HeaderedContentControl Style="{StaticResource PopUpWrapper}" Header="Credits">
+        <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="5 0">
+
+                <TextBlock Style="{StaticResource BlockTitle}">Libraries</TextBlock>
+
+                <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf130;" Content="Fody v4.2.1 by Simon Cropp"/>
+                <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf135;" Content="Newtonsoft JSON v13.0.1 by James Newton-King"/>
+                <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Extended WPF Tookit v4.1.0 by Xceed Software"/>
+
+                <TextBlock Style="{StaticResource BlockTitle}">Playtesters</TextBlock>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Thomas Frew"/>
+                        <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Thomas Frew"/>
+                        <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Thomas Frew"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Thomas Frew"/>
+                        <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Thomas Frew"/>
+                        <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf00d;" Content="Thomas Frew"/>
+                    </StackPanel>
+                </Grid>
+
+                <TextBlock Style="{StaticResource BlockTitle}">Special People</TextBlock>
+
+                <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf471;" Content="Luke Malpass: For teaching me everything I know about WPF."/>
+                <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf118;" Content="Ross Goldfinch: For being the best mentor I could ever need."/>
+            </StackPanel>
+        </ScrollViewer>
+    </HeaderedContentControl>
+</local:BasePopUp>

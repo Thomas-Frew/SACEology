@@ -1,0 +1,92 @@
+﻿<local:BasePopUp x:Class="SACEology.TeacherAddAssignmentPopUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600">
+
+    <HeaderedContentControl Style="{StaticResource PopUpWrapper}" Header="Create an Assignment">
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Style="{StaticResource CoreSubheader}" Text="Enter Assignment Content"/>
+
+                    <!-- Assignment Name -->
+                    <TextBox Height="50" Style ="{StaticResource PlaceholderInput}" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Tag="Enter your assignment's name."/>
+
+                    <!-- Assignment Description -->
+                    <TextBox Height="150" Style="{StaticResource MultilinePlaceholderInput}" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" MinLines="5" MaxLines="5" Tag="Describe your assignment to your class. Remember to use as much detail as possible, indicating noteworthy aspects, performance standards and resources."/>
+
+                    <TextBlock Style="{StaticResource CoreSubheader}" Text="Enter Assignment Properties"/>
+
+                    <!-- Assignment Dates -->
+                    <Grid Height="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="0" Style="{StaticResource PlaceholderInput}" Text="{Binding StartingDate}" Tag="Starting Date"/>
+                        <TextBox Grid.Column="1" Style="{StaticResource PlaceholderInput}" Text="{Binding DueDate}" Tag="Due Date"/>
+                    </Grid>
+
+                    <Grid Height="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="0" Style="{StaticResource PlaceholderInput}" Text="{Binding Weight}" Tag="Enter this assignment's weighting."/>
+                        <Button Grid.Column="1" Style="{StaticResource DarkSymbolButton}" Command="{Binding DecrementWeightCommand}">&#xf056;</Button>
+                        <Button Grid.Column="2" Style="{StaticResource DarkSymbolButton}" Command="{Binding IncrementWeightCommand}">&#xf055;</Button>
+                    </Grid>
+
+                    <!-- Performance Standards Selection Header -->
+                    <TextBlock Style="{StaticResource CoreSubheader}" Text="Select Peformance Standards"/>
+
+                    <!-- Assignment Performance Standards -->
+                    <ListBox ItemsSource="{Binding PerformanceStandards}" SelectionMode="Multiple" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <local:AspectBadge/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Width="600"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ListBox>
+
+                    <!-- Assessment Type Selection Header -->
+                    <TextBlock Style="{StaticResource CoreSubheader}" Text="Select Assessment Type"/>
+
+                    <!-- Assignment Assessment Type -->
+                    <ListBox ItemsSource="{Binding AssessmentTypes}" SelectedIndex="{Binding SelectedAssessmentIndex}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <local:AspectBadge/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Width="600"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ListBox>
+                </StackPanel>
+            </ScrollViewer>
+
+            <Button Grid.Row="1" Style="{StaticResource CoreButton}" Command="{Binding CreateAssignmentCommand}" Focusable="True">Create Assignment</Button>
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePopUp>

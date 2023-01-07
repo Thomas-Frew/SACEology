@@ -1,0 +1,54 @@
+﻿<local:BasePage x:Class="SACEology.Pages.TeacherMyCommunityPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+
+    <HeaderedContentControl Style="{StaticResource TeacherPageWrapper}" Header="My Community">
+        <Grid Name="mainframe">
+            <!-- Page Division -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Style="{StaticResource CoreSubheader}" Text="View Chats For:"/>
+                <ComboBox Grid.Column="1" ItemContainerStyle="{StaticResource TeacherComboBoxItem}" ItemsSource="{Binding Subjects}" SelectedItem="{Binding Subject}"/>
+                <Button Grid.Column="2" Style="{StaticResource DarkSymbolButton}" Command="{Binding SendMessageButtonCommand}" Content="&#xf1d8;"/>
+            </Grid>
+           
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Name="MessagesScrollViewer">
+                <ItemsControl ItemsSource="{Binding Messages}" BorderThickness="0" Background="{StaticResource CoreLightBrush}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <local:MessageItem/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Style="{StaticResource SettingButton}" Background="{Binding Source={x:Static properties:Settings.Default}, Path=IsAttachmentsOnly, Converter={local:BooleanToSettingButtonBackgroundConverter}}" Content="{Binding IsAttachmentsOnlyButtonContent}" Command="{Binding InvertAttachmentsOnlySettingCommand}"/>
+                <TextBox Grid.Column="1" Style="{StaticResource PlaceholderInput}" FontSize="{StaticResource FontSizeFair}" Text="{Binding SearchString, UpdateSourceTrigger=PropertyChanged}" Tag="Search..."/>
+            </Grid>
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePage>

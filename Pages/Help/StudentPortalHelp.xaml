@@ -1,0 +1,47 @@
+﻿<Page x:Class="SACEology.Pages.StudentPortalHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From the Student Portal, you can access your assignments, courses, and student-exclusive pages to help organise your studies.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Click on a panel to open up that page.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}" Foreground="{StaticResource CoreLightBrush}">
+                    There are buttons universal to pages and pop-ups you should learn to navigate around the app.
+                </TextBlock>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <HeaderedContentControl Grid.Row="0" Style="{StaticResource StackableTipIconTitle}" Header="&#xf0a8;" Content="Navigate to the previous page."/>
+                    <HeaderedContentControl Grid.Row="1" Style="{StaticResource StackableTipIconTitle}" Header="&#xf059;" Content="Get help about the current page."/>
+                    <HeaderedContentControl Grid.Row="2" Style="{StaticResource StackableTipIconTitle}" Header="&#xf057;" Content="Close an opened pop-up (like this one!)."/>
+                </Grid>
+            </StackPanel>
+            
+        </StackPanel>
+    </ScrollViewer>
+</Page>

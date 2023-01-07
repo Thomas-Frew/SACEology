@@ -1,0 +1,48 @@
+﻿<Page x:Class="SACEology.Pages.StudentMyCoursesHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From your courses page, you can view metrics on your courses and plan your studies in greater depth.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Click on a course to view its structure.
+            </TextBlock>
+
+            <StackPanel Background="{StaticResource CoreGreenBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf0eb;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Pro Tip!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Courses with exceptional properties are labelled with icons to help prioritise your studies.
+                </TextBlock>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <HeaderedContentControl Grid.Row="0" Style="{StaticResource StackableTipIconTitle}" Header="&#xf017;" Content="Course with the most urent assignment."/>
+                    <HeaderedContentControl Grid.Row="1" Style="{StaticResource StackableTipIconTitle}" Header="&#xf468;" Content="Course with the most assignments."/>
+                </Grid>
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The date displayed on a course indicates when its next assignment is due.
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

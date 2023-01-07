@@ -1,0 +1,51 @@
+﻿<Page x:Class="SACEology.Pages.TeacherMyCoursesHelp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="600">
+
+
+    <ScrollViewer Background="{StaticResource CoreLightBrush}" UseLayoutRounding="True" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="5 0">
+            <TextBlock Style="{StaticResource BlockBody}">
+                From your courses page, you can create and manage SACE-approved courses for your students while effectively checking up on them.
+            </TextBlock>
+
+            <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf055;" Content="Click the Add Button to create a new course."/>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Click on a course to view more information about it.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The number next to a course indicates its number of new messages.
+            </TextBlock>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                The date next to a course indicates when its most urgent assignment is due.
+            </TextBlock>
+
+            <HeaderedContentControl Style="{StaticResource StackableIconTitle}" Header="&#xf1f8;" Content="Click the Bin Button next to a course to delete it."/>
+
+            <StackPanel Background="{StaticResource CoreRedBrush}" Margin="0 5">
+                <!-- Title Section -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Style="{StaticResource BlockSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="&#xf071;" Margin="5 5 5 0"/>
+                    <TextBlock Style="{StaticResource BlockTitle}" Foreground="{StaticResource CoreLightBrush}" Width="80" VerticalAlignment="Bottom" Text="Warning!"/>
+                </StackPanel>
+
+                <TextBlock Style="{StaticResource TipBlockBody}">
+                    Courses which are deleted are deleted permanently, alongside all their assignments. Be careful!
+                </TextBlock>
+            </StackPanel>
+
+            <TextBlock Style="{StaticResource BlockBody}">
+                Metrics on the bottom count your total number of courses, incomplete courses, and new messages.
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

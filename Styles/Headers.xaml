@@ -1,0 +1,325 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:SACEology"
+                    xmlns:properties="clr-namespace:SACEology.Properties">
+
+    <!-- Static-colour headered pop-ups -->
+    <Style x:Key="TeacherPageWrapper" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid Background="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Background="{StaticResource TeacherBlueBrush}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:ReserveBooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                            </Grid>
+
+                            <TextBlock Style="{StaticResource CoreHeader}" Grid.ColumnSpan="3" Foreground="{StaticResource CoreLightBrush}" Text="{TemplateBinding Header}"/>
+
+                            <Grid Grid.Column="2" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:BooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="60"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="StudentPageWrapper" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid Background="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Background="{StaticResource StudentOrangeBrush}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:ReserveBooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                            </Grid>
+
+                            <TextBlock Style="{StaticResource CoreHeader}" Grid.ColumnSpan="3" Foreground="{StaticResource CoreLightBrush}" Text="{TemplateBinding Header}"/>
+
+                            <Grid Grid.Column="2" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:BooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="60"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Variable-colour headered pop-ups -->
+    <Style x:Key="CoursePageWrapper" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid Background="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Background="{Binding SubjectCode, Converter={local:SubjectCodeToBrushConverter}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:ReserveBooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                            </Grid>
+
+                            <TextBlock Style="{StaticResource CoreHeader}" Grid.ColumnSpan="3" Foreground="{StaticResource CoreLightBrush}" Text="{TemplateBinding Header}"/>
+
+                            <Grid Grid.Column="2" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:BooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="60"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="AssignmentPageWrapper" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid Background="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Background="{Binding AssessmentType, Converter={local:SubjectCodeToBrushConverter}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:ReserveBooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                            </Grid>
+
+                            <TextBlock Style="{StaticResource CoreHeader}" Grid.ColumnSpan="3" Foreground="{StaticResource CoreLightBrush}" Text="{TemplateBinding Header}"/>
+
+                            <Grid Grid.Column="2" Visibility="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:BooleanToVisibilityConverter}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="60"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="0" Content="&#xf059;" Command="{Binding HelpCommand}"/>
+                                <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf0a8;" Command="{Binding NavigateBackwardButtonCommand}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- The wrapper for all pop-ups -->
+    <Style x:Key="PopUpWrapper" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid Background="Transparent">
+                        <Grid Height="{Binding Source={x:Static properties:Settings.Default}, Path=WindowHeight, Converter={local:WindowHeightToPopUpHeightConverter}}" Width="600" >
+                            <Border Background="{StaticResource CoreMediumBrush}">
+                                <Border.Effect>
+                                    <DropShadowEffect Opacity="0.5" BlurRadius="20"/>
+                                </Border.Effect>
+                            </Border>
+
+                            <Border>
+                                <Grid Background="{StaticResource CoreLightBrush}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="60"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Background="{StaticResource CoreDarkBrush}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="60"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Style="{StaticResource CoreHeader}" Foreground="{StaticResource CoreLightBrush}" Grid.ColumnSpan="2" Text="{TemplateBinding Header}"/>
+                                        <Button Style="{StaticResource LightSymbolButton}" Grid.Column="1" Content="&#xf057;" Command="{Binding ClosePopUpCommand}"/>
+                                    </Grid>
+
+                                    <Grid Grid.Row="1">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="StudentMenuButton" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid>
+                        <TextBlock Style="{StaticResource CoreIcon}" Foreground="{StaticResource StudentOrangeBrush}" Margin="0" FontSize="135" Text="{TemplateBinding Tag}"/>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource CoreBody}" Foreground="{StaticResource CoreLightBrush}" FontSize="{StaticResource FontSizeRegular}" Text="{TemplateBinding Header}"/>
+                            <TextBlock Style="{StaticResource CoreBody}" Foreground="{StaticResource CoreLightBrush}" TextAlignment="Center" Text="{TemplateBinding Content}"/>
+                        </StackPanel>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TeacherMenuButton" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid>
+                        <TextBlock Style="{StaticResource CoreIcon}" Foreground="{StaticResource TeacherBlueBrush}" Margin="0" FontSize="135" Text="{TemplateBinding Tag}"/>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource CoreBody}" Foreground="{StaticResource CoreLightBrush}" FontSize="{StaticResource FontSizeRegular}" Text="{TemplateBinding Header}"/>
+                            <TextBlock Style="{StaticResource CoreBody}" Foreground="{StaticResource CoreLightBrush}" TextAlignment="Center" Text="{TemplateBinding Content}"/>
+                        </StackPanel>
+
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="StackableIconTitle" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Style="{StaticResource BlockBody}" VerticalAlignment="Top" HorizontalAlignment="Center">
+                                <Run Style="{StaticResource InlineSymbol}" Text="{TemplateBinding Header}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Column="1" Style="{StaticResource BlockBody}" Text="{TemplateBinding Content}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="StackableTipIconTitle" TargetType="{x:Type HeaderedContentControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="HeaderedContentControl">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Style="{StaticResource TipBlockBody}" VerticalAlignment="Top" HorizontalAlignment="Center">
+                                <Run Style="{StaticResource InlineSymbol}" Foreground="{StaticResource CoreLightBrush}" Text="{TemplateBinding Header}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Column="1" Style="{StaticResource TipBlockBody}" Text="{TemplateBinding Content}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

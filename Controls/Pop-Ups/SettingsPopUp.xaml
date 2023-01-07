@@ -1,0 +1,42 @@
+﻿<local:BasePopUp x:Class="SACEology.SettingsPopUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SACEology"
+      xmlns:properties="clr-namespace:SACEology.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600">
+
+    <HeaderedContentControl Style="{StaticResource PopUpWrapper}" Header="Settings">
+        <Grid Margin="5">
+            <!-- Pop-Up Layout -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Settings Headings -->
+            <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="Auto-Delete Messages"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="Scale ATAR Grades"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource CoreBody}" HorizontalAlignment="Left" Text="Position Navigation Controls"/>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource HelpIcon}" Text="&#xf059;" ToolTipService.InitialShowDelay="100" ToolTipService.ShowDuration="2000" ToolTipService.BetweenShowDelay="200" ToolTip="Automatically delete assignment messages older than 10 days."/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource HelpIcon}" Text="&#xf059;" ToolTipService.InitialShowDelay="100" ToolTipService.ShowDuration="2000" ToolTipService.BetweenShowDelay="200" ToolTip="Calculate your predicted ATAR with projected subject scaling."/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource HelpIcon}" Text="&#xf059;" ToolTipService.InitialShowDelay="100" ToolTipService.ShowDuration="2000" ToolTipService.BetweenShowDelay="200" ToolTip="On what side the back and help buttons should be placed."/>
+
+            <!-- Settings Buttons -->
+            <Button Grid.Row="0" Grid.Column="1" Style="{StaticResource SettingButton}" Command="{Binding InvertSettingCommand}" CommandParameter="0" Content="{Binding AutoDeleteMessagesSettingButtonContent}" Background="{Binding Source={x:Static properties:Settings.Default}, Path=AutoDeleteMessages, Converter={local:BooleanToSettingButtonBackgroundConverter}}"/>
+            <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource SettingButton}" Command="{Binding InvertSettingCommand}" CommandParameter="1" Content="{Binding ScaleATARGradesSettingButtonContent}" Background="{Binding Source={x:Static properties:Settings.Default}, Path=ScaleATARGrades, Converter={local:BooleanToSettingButtonBackgroundConverter}}"/>
+            <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource SettingButton}" Command="{Binding InvertSettingCommand}" CommandParameter="2" Content="{Binding NavigationControlsPositionButtonContent}" Background="{Binding Source={x:Static properties:Settings.Default}, Path=ReverseNavigationPosition, Converter={local:BooleanToSettingButtonBackgroundConverter}}"/>
+
+        </Grid>
+    </HeaderedContentControl>
+</local:BasePopUp>
