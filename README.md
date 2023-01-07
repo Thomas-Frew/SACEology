@@ -29,9 +29,9 @@ SACEology helps students by:
 
 ## Development
 
-Learn more about how SACEology was developed [with this video]().
+Learn more about how SACEology was developed [with this video](https://drive.google.com/file/d/1C-u-bAP-1KQwXbuDcMrtSTmquDUjOMQk/view?usp=sharing).
 
-Learn more about how SACEology was designed [with this video]().
+Learn more about SACEology's features and benefits [with this video](https://drive.google.com/file/d/1nSo8cT3iHTJFxqXvyWHNeM5H9n7b3ZJW/view?usp=sharing).
 
 ## Screenshots
 
