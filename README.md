@@ -36,20 +36,20 @@ Learn more about how SACEology was designed [with this video]().
 ## Screenshots
 
 <p float="left">
-  <img src="Assets/SC1.PNG" height="300"/>
-  <img src="Assets/SC2.PNG" height="300"/>
-  <img src="Assets/SC3.PNG" height="300"/>
-  <img src="Assets/SC4.PNG" height="300"/>
-  <img src="Assets/SC5.PNG" height="300"/>
-  <img src="Assets/SC6.PNG" height="300"/>
-  <img src="Assets/SC7.PNG" height="300"/>
-  <img src="Assets/SC8.PNG" height="300"/>
-  <img src="Assets/SC9.PNG" height="300"/>
-  <img src="Assets/SC10.PNG" height="300"/>
-  <img src="Assets/SC11.PNG" height="300"/>
-  <img src="Assets/SC12.PNG" height="300"/>
-  <img src="Assets/SC13.PNG" height="300"/>
-  <img src="Assets/SC14.PNG" height="300"/>
-  <img src="Assets/SC15.PNG" height="300"/>
-  <img src="Assets/SC16.PNG" height="300"/>
+  <img src="Assets/SC1.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC2.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC3.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC4.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC5.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC6.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC7.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC8.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC9.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC10.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC11.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC12.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC13.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC14.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC15.PNG" style="width: 50%; height: 50%"/>
+  <img src="Assets/SC16.PNG" style="width: 50%; height: 50%"/>
 </p>
